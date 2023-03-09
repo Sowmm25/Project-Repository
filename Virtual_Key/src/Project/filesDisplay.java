@@ -51,7 +51,7 @@ public class filesDisplay {
 		
 		
 }
-	static void ListFiles() {
+	static void ListFiles() {  //to display file names in ascending order
 		File f=new File("C:/java/Virtual_Key/FileRepository");
 		File[] pathnames=f.listFiles();
 		Sorting(pathnames);
@@ -63,7 +63,7 @@ public class filesDisplay {
 		}
 		
 	}
-	static void DisplayMenu() {
+	static void DisplayMenu() {  //developer details
 		final String name="Sowmyashree M M";
 		final String email="somm@teksystems.com";
 		final String city="Mysuru";
@@ -86,7 +86,7 @@ public class filesDisplay {
 		
 		
 	}
-	static void AddFiles() {
+	static void AddFiles() {  // to add file to the directory
 		String fileName;
 		File f=new File("C:/java/Virtual_Key/FileRepository");
 		Scanner scanner=new Scanner(System.in);
@@ -112,7 +112,7 @@ public class filesDisplay {
 }
 }
 	
-	static void DeleteFiles() {
+	static void DeleteFiles() { // to delete file
 		String fileName;
 		File f=new File("C:/java/Virtual_Key/FileRepository");
 		Scanner scanner=new Scanner(System.in);
@@ -132,7 +132,7 @@ public class filesDisplay {
 	    }
 			System.out.println();
 	}  
-	static File[] Sorting(File[] array) {
+	static File[] Sorting(File[] array) {  //Bubble sort
 		for(int i=0;i<array.length;i++) {
 			for(int j=0;j<array.length-1;j++) {
 				if(array[j].compareTo(array[i])>0) {
@@ -146,7 +146,7 @@ public class filesDisplay {
 	}
 	
 	    
-	static void SearchFile() {
+	static void SearchFile() { // to search for a file in folder using Binary search
 		String fileName;
 		File f=new File("C:/java/Virtual_Key/FileRepository");
 		Scanner scanner=new Scanner(System.in);
